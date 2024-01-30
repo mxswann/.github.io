@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Book Title</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+      @media screen and (max-width: 700px) {
+        .container {
+          width: 100%;
+        }
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+      }
+      #about-the-book, #author-info, #purchase {
+        margin: 20px 0;
+        padding: 15px;
+      }
+      .buy-button {
+        display: inline-block;
+        background-color: #008CBA;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Book Title</h1>
+        </div>
+    </header>
+    <div class="container">
+        <section id="about-the-book">
+            <h2>About the Book</h2>
+            <p>Description here...</p>
+        </section>
+        <section id="author-info">
+            <h2>About the Author</h2>
+            <p>Author bio here...</p>
+        </section>
+        <section id="purchase">
+            <!-- Replace with actual payment link or button -->
+            <a href="#" class="buy-button">Buy Now</a>
+        </section>
+    </div>
+</body>
+</html>
