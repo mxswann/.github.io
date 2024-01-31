@@ -23,6 +23,7 @@
         }
         .container {
             width: 80%;
+            max-width: 900px; /* Adjust the max-width as needed */
             margin: auto;
             overflow: hidden;
         }
@@ -38,12 +39,13 @@
             margin-top: 20px;
         }
         #book-cover img {
-            max-width: 100%;
+            width: 60%; /* Adjust the percentage as needed */
             height: auto;
+            margin-top: 20px;
         }
         @media screen and (max-width: 700px) {
-            .container {
-                width: 100%;
+            .container, #book-cover img {
+                width: 95%;
             }
         }
     </style>
@@ -55,7 +57,9 @@
         </div>
     </header>
     <div class="container">
-        <img src="bookcover.png" alt="Drive, Chip, and ChatGPT Book Cover">
+        <section id="book-cover">
+            <img src="bookcover.png" alt="Drive, Chip, and ChatGPT Book Cover">
+        </section>
         <section id="about-the-book">
             <h2>About the Book</h2>
             <p>This book is your ultimate guide to reprogramming your golf game. With ChatGPT's AI technology, unlock new dimensions of skill and understanding on the course.</p>
